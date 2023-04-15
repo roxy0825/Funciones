@@ -24,16 +24,40 @@ def calcularNotas(nota1, nota2, nota3):
     Definitiva=(nota1+nota2+nota3)/3
     return Definitiva
 
+
 def Observacion(notaFinal):
     if notaFinal > 3:
         print("Felicitaciones aprobaste materia")
     else:
         print("No aprueba materias")
+#----------------------------------------------
+def Masa():
+    peso=int(input("peso: "))
+    altura = int(input("altura: "))
+    calcular=(peso / altura)*2
+    print(f"{peso} + {altura} = {calcular}")
+
+def Subtotal(precio, cantidad):
+    sub=(cantidad * precio)
+    return sub
+
+
+def descuento(cantidad):
+    if cantidad > 10:
+        print("se le hace descuento del 7%")
+    else:
+        print("no tiene descuento")
+
 
 if __name__=="__main__":
-    notaFinal=calcularNotas(3,4,5)
-    print("Nota definitiva", notaFinal)
-    Observacion(notaFinal)
+    Subtotal()
+    descuento()
+
+
+
+   # notaFinal=calcularNotas(3,4,5)
+    #print("Nota definitiva", notaFinal)
+    #Observacion(notaFinal)
 
 
     #esta es calcular nota final
